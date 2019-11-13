@@ -1,3 +1,5 @@
+postgresql Configrare:::
+
 # install on project:
     pip install django psycopg2
 
@@ -11,5 +13,25 @@ DATABASES = {
         'PASSWORD': '7921',
         'HOST': 'localhost',
         'PORT': '5432',
+    }
+}
+
+
+My SqlConfigrare:::
+
+pip install mysqlclient
+
+Second Way
+pip install --only-binary :all: mysqlclient
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
