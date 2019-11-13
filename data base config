@@ -1,0 +1,15 @@
+# install on project:
+    pip install django psycopg2
+
+
+# Change on your project:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'django',
+        'USER': 'postgres',
+        'PASSWORD': '7921',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
